@@ -206,7 +206,7 @@ const Popup = () => {
   return (
     <>
       <style>{PopupStyle}</style>
-      <div className="Popup" style={{ background: '#080A0B' }}>
+      <div className="Popup">
         {activePage === 'recording' && (
           <>
             <Logo />
@@ -244,27 +244,8 @@ const Popup = () => {
           <>
             <div className="d-flex justify-between items-center">
               <Logo />
-              <div>
-                <a
-                  href="https://www.deploysentinel.com/docs/recorder"
-                  target="_blank"
-                  className="text-button text-decoration-none text-sm text-grey"
-                >
-                  <FontAwesomeIcon icon={faInfoCircle} className="mr-1" /> Docs
-                </a>
-              </div>
             </div>
             <div className="text-center mt-12">
-              <div
-                style={{
-                  fontSize: 14,
-                  lineHeight: 1.5,
-                }}
-                className="text-grey mt-6"
-              >
-                Generate Cypress, Playwright & Puppeteer scripts from your
-                browser actions (ex. click, type, scroll).
-              </div>
               <button
                 className="btn-primary mt-8"
                 onClick={() => onRecordNewTestClick()}

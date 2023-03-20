@@ -11,12 +11,19 @@
     "32": "Icon32.png",
     "128": "Icon128.png"
   },
+  "file_system_provider_capabilities": {
+    "configurable": true,
+    "watchable": false,
+    "multiple_mounts": true,
+    "source": "network"
+  },
   "permissions": [
     "activeTab",
     "scripting",
     "storage",
     "contextMenus",
-    "webNavigation"
+    "webNavigation",
+    "fileSystemProvider"
   ],
   "host_permissions": ["<all_urls>"],
   "externally_connectable": {
